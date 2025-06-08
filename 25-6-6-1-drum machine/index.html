@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Drum Machine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id = "drum-machine">
+      <div id= "pad-bank">
+        <button class="drum-pad" id="key-q">Q
+          <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Heater-1.mp3" id="Q"></audio>
+        </button>
+        <button class="drum-pad" id="key-w">W
+          <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Heater-2.mp3" id="W"></audio>
+        </button>
+        <button class="drum-pad" id="key-e">E
+          <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Heater-3.mp3" id="E"></audio>
+        </button>
+        <button class="drum-pad" id="key-a">A
+          <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Heater-4_1.mp3" id="A"></audio>
+        </button>
+        <button class="drum-pad" id="key-s">S
+          <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Heater-6.mp3" id="S"></audio>
+        </button>
+        <button class="drum-pad" id="key-d">D
+          <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Dsc_Oh.mp3" id="D"></audio>
+        </button>
+        <button class="drum-pad" id="key-z">Z
+          <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Kick_n_Hat.mp3" id="Z"></audio>
+        </button>
+        <button class="drum-pad" id="key-x">X
+          <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/RP4_KICK_1.mp3" id="X"></audio>
+        </button>
+        <button class="drum-pad" id="key-c">C
+          <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Cev_H2.mp3" id="C"></audio>
+        </button>
+
+      </div>
+
+      <div class="switch-container">
+        <span id="power">Power <span id="power-text">On</span></span>
+
+        <label class="switch">
+          <input type="checkbox" id="power-control">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <p id="display"></p>
+
+      <div class="volume-container">
+        <span id="volume-text">Volume: <span id="volume-num">50%</span></span>
+        <input type="range" min="1" max="100" value="50" id="volume">
+        
+      </div> 
+
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
